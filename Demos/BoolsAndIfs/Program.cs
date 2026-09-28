@@ -73,6 +73,66 @@
                     Console.WriteLine("And greater than or equal to 20!");
                 }
             }
+
+
+            int health = 0;
+            string message;
+            if(health > 0)
+            {
+                message = "You're alive!";
+            }
+            else
+            {
+                message = "Bad news...";
+            }
+
+            Console.WriteLine(message);
+
+
+
+
+            int level = 4;
+            string weapon = "sword";
+
+            bool isLevel10OrGreater = level >= 10; // False
+            bool weaponIsSword = weapon == "sword"; // True
+
+            bool levelAndSword = isLevel10OrGreater && weaponIsSword; // False
+
+            levelAndSword = (level >= 10) && (weapon == "sword"); // False
+            //Console.WriteLine(levelAndSword);
+
+            /*
+            if(levelAndSword)
+            {
+                Console.WriteLine("You're ready to continue, adventurer!");
+            }
+            */
+
+            if(level >= 10 || 
+                weapon == "sword")
+            {
+                Console.WriteLine("You're ready to continue, adventurer!");
+            }
+
+
+
+            bool levelOrSword = (level >= 10) || (weapon == "sword"); // True
+            //Console.WriteLine(levelOrSword);
+
+
+            bool isFalling = false;
+
+            if(isFalling)
+            {
+                isFalling = false;
+            }
+            else
+            {
+                isFalling = true;
+            }
+
+            isFalling = !isFalling; // Better
         }
     }
 }
