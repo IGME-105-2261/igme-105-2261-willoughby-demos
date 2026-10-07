@@ -8,12 +8,38 @@
             while (num < 5)
             {
                 Console.WriteLine("Hello world");
-                Console.WriteLine("Hi class");
-                int a = 5;
-                Console.WriteLine(a + num);
                 num++;
             }
             Console.WriteLine("Done!");
+            num = 3;
+
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("Hello world");
+            }
+            Console.WriteLine("Done!");
+
+
+            for (int i = 100; i > 0; i /= 3)
+            {
+                Console.Write(i + ", ");
+            }
+            Console.WriteLine();
+
+
+
+            for(int h = 0; h < 5; h++)
+            {
+                for(int w = 0; w < 3; w++)
+                {
+                    Console.WriteLine("({0}, {1})", w, h);
+                }
+            }
+
+
+
+
+
 
             Console.Write("Please enter your name: ");
             string name = Console.ReadLine();
